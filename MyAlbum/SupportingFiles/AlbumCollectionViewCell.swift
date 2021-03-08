@@ -8,6 +8,7 @@
 import UIKit
 
 class AlbumCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var albumImageView: UIImageView!
     @IBOutlet weak var albumName: UILabel!
     @IBOutlet weak var albumImageCount: UILabel!

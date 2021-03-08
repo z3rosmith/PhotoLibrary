@@ -94,7 +94,7 @@ class ImageListViewController: UIViewController {
     }
     
     func setFlowLayout() {
-        let margin: CGFloat = 7
+        let margin: CGFloat = 3
         let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         flowLayout.minimumInteritemSpacing = margin
@@ -183,7 +183,7 @@ extension ImageListViewController: UICollectionViewDataSource {
         
         let asset: PHAsset = fetchResult.object(at: index)
         
-        imageManger.requestImage(for: asset, targetSize: CGSize(width: 160, height: 160), contentMode: .aspectFill, options: nil) { (image, _) in
+        imageManger.requestImage(for: asset, targetSize: CGSize(width: 300, height: 300), contentMode: .aspectFill, options: nil) { (image, _) in
             cell.imageView.image = image
         }
         

@@ -64,27 +64,35 @@
 		3C16EF9025E6216500D84F8F /* MyAlbum */ = {
 			isa = PBXGroup;
 			children = (
+				3C16EF9525E6216500D84F8F /* AlbumListViewController.swift */,
+				3C86312825EC9BC1005076B1 /* ImageListViewController.swift */,
+				3C86313225ECBDAF005076B1 /* ImageZoomViewController.swift */,
+				3C86313A25EFDF7E005076B1 /* SupportingFiles */,
+				3CAA6CC125F663E600A62788 /* Resources */,
+			);
+			path = MyAlbum;
+			sourceTree = "<group>";
+		};
+		3C86313A25EFDF7E005076B1 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				3C16EF9125E6216500D84F8F /* AppDelegate.swift */,
 				3C16EF9325E6216500D84F8F /* SceneDelegate.swift */,
 				3C86312225EB87FF005076B1 /* AlbumCollectionViewCell.swift */,
 				3C86312D25ECA711005076B1 /* ImageCollectionViewCell.swift */,
-				3C86313A25EFDF7E005076B1 /* ViewController */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		3CAA6CC125F663E600A62788 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				3C16EF9725E6216500D84F8F /* Main.storyboard */,
 				3C16EF9A25E6216600D84F8F /* Assets.xcassets */,
 				3C16EF9C25E6216600D84F8F /* LaunchScreen.storyboard */,
 				3C16EF9F25E6216600D84F8F /* Info.plist */,
 			);
-			path = MyAlbum;
-			sourceTree = "<group>";
-		};
-		3C86313A25EFDF7E005076B1 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				3C16EF9525E6216500D84F8F /* AlbumListViewController.swift */,
-				3C86312825EC9BC1005076B1 /* ImageListViewController.swift */,
-				3C86313225ECBDAF005076B1 /* ImageZoomViewController.swift */,
-			);
-			path = ViewController;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,7 +320,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2W776SPR4X;
-				INFOPLIST_FILE = MyAlbum/Info.plist;
+				INFOPLIST_FILE = MyAlbum/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,7 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2W776SPR4X;
-				INFOPLIST_FILE = MyAlbum/Info.plist;
+				INFOPLIST_FILE = MyAlbum/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
