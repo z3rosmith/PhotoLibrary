@@ -197,7 +197,8 @@ extension ImageListViewController: UICollectionViewDelegate {
         case .view:
             guard let nextViewController: ImageZoomViewController = self.storyboard?.instantiateViewController(identifier: "ImageZoomViewController") as? ImageZoomViewController else { fatalError("Unable to create Image Zoom View Controller") }
             
-            let asset = self.fetchResult.object(at: indexPath.item)
+            let index = getIndex(indexPath: indexPath)
+            let asset = self.fetchResult.object(at: index)
             nextViewController.asset = asset
             
             let dateFormatter = DateFormatter()
