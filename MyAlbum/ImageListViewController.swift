@@ -94,13 +94,17 @@ class ImageListViewController: UIViewController {
     }
     
     func setFlowLayout() {
+        let itemsPerRow: CGFloat = 3
+        
         let margin: CGFloat = 3
         let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         flowLayout.minimumInteritemSpacing = margin
         flowLayout.minimumLineSpacing = margin
         
-        let width: CGFloat = (UIScreen.main.bounds.width - margin*2) / 3.0
+        let paddingSpace: CGFloat = margin*2
+        let availableWidth: CGFloat = UIScreen.main.bounds.width - paddingSpace
+        let width: CGFloat = availableWidth / itemsPerRow
         flowLayout.itemSize = CGSize(width: width, height: width)
         
         self.collectionView.collectionViewLayout = flowLayout

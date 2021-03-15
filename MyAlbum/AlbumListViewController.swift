@@ -93,8 +93,8 @@ class AlbumListViewController: UIViewController {
         let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         flowLayout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
 
-        let paddingSpace = flowLayout.sectionInset.left * (itemsPerRow + 1)
-        let availableWidth = UIScreen.main.bounds.width - paddingSpace
+        let paddingSpace: CGFloat = flowLayout.sectionInset.left * (itemsPerRow + 1)
+        let availableWidth: CGFloat = UIScreen.main.bounds.width - paddingSpace
         
         let width: CGFloat = availableWidth / itemsPerRow
         flowLayout.itemSize = CGSize(width: width, height: width * 1.3)
